@@ -27,13 +27,11 @@ export default function AlertDialogSlide() {
         TransitionComponent={Transition}
         keepMounted
         aria-describedby="alert-dialog-slide-description"
+        fullScreen
       >
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            
-            {
-             open && <VideoBackground movieID={id} bool={true} />
-            }
+            {open && <VideoBackground movieID={id} bool={true} />}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
